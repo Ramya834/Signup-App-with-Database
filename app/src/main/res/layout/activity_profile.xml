@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99AEB8"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/CircleimageView"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:text="Name   :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/pusername"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="Username "
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:text="Email    :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="100dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="346dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pEmail"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:text="Email"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/Email"
+        tools:layout_editor_absoluteY="341dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:text="Phone No     :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="410dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pPhoneNo"
+        android:layout_width="170dp"
+        android:layout_height="25dp"
+        android:text="Phone No"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toEndOf="@+id/phoneNo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="city     :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="467dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pcity"
+        android:layout_width="172dp"
+        android:layout_height="37dp"
+        android:text="City"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/city"
+        tools:layout_editor_absoluteY="465dp"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <Button
+        android:id="@+id/pUpdateBtn"
+        android:layout_width="148dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="136dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteUser"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pUpdateBtn"
+        tools:ignore="InvalidId,MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
